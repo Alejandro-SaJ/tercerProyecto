@@ -1,0 +1,118 @@
+:root{
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+
+    /* (paragraphs) */
+    --TransparentWhite : hsla(0, 0%, 100%, 0.75);
+
+    /* (background, headings, buttons) */
+    --VeryLightGray : hsl(0, 0%, 95%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 68.5%;
+}
+body{
+    font-size: 15px;
+    font-family:  "Lexend Deca", sans-serif;
+    font-weight: 200;
+    
+}
+.container{
+    margin: 20rem auto;
+    display: flex;
+    width: 800px;
+    flex-flow: row;
+}
+
+.cajita{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.sedans{
+    background-color: var(--BrightOrange);
+    padding: 15px;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.suvs{
+    background-color: var(--DarkCyan);
+    padding: 15px;
+}
+
+.luxury{
+    background-color: var(--VeryDarkCyan);
+    padding: 15px;
+    
+    border-radius: 0px 7px 7px 0px;
+}
+
+.carros{
+    margin: 20px;
+}
+.titulo{
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--TransparentWhite);
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.texto{
+    color:var(--TransparentWhite);
+    margin: 20px;
+    margin-bottom: 40px;
+
+}
+
+.boton{
+    border: 0px;
+    border-radius: 20px;
+    padding: 9px 20px;
+    margin: 20px;
+    font-size: 1rem;  
+    font-weight: 700;
+    
+}
+
+.btsuvs{
+    color: var(--DarkCyan);
+}
+
+.btsedans{
+    color: var(--BrightOrange);
+}
+.btluxury{
+    color: var(--VeryDarkCyan);
+}
+
+@media only screen and (max-width: 800px) {
+  
+
+    .container{
+        margin-top: 5rem;
+        display: flex;
+        flex-flow: column;
+        width: 90%;
+    }
+
+    .sedans{
+
+        border-radius: 7px 7px 0px 0px;
+    }
+    
+    .luxury{
+        background-color: var(--VeryDarkCyan);
+        padding: 15px;
+        
+        border-radius: 0px 0px 7px 7px;
+    }
+
+  }
